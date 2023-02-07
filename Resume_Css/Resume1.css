@@ -1,0 +1,49 @@
+
+div {
+    border-radius: 5px;
+  }
+  
+  #header {
+    height: 20px;
+    width: 100%;
+    background-color: #ffcccc;
+    position:absolute;
+    z-index: 1;
+  }
+  
+  #footer {
+    height: 30px;
+    width: 900%;
+    background-color: #ffcccc;
+    position:relative;
+  }
+  
+  .right {
+    height: 1000px;
+    width: 36px;
+    background-color: #e0eeee;
+    float: right;
+    position: inherit;
+  }
+  
+  .stuff {
+    display: inline-block;
+    margin-top: 6px;
+    width: 80%;
+    height: 700px;
+  } 
+  
+  p,li {
+    font-family: 'Cormorant Garamond';
+  }
+  
+  .head {
+    font-size: 20px;
+    color:purple;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
