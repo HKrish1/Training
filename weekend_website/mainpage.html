@@ -5,20 +5,21 @@
     <link rel="stylesheet" type="text/css" href="C:\Users\harik\OneDrive\Desktop\weekend_website\mainpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <body>
+ 
         <div class="hero">
         <nav>
             <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\logologo (2) (1).webp" class="logo">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">PROJECTS</a></li>    
-                <li><a href="">TEAM</a></li>
-                <li><a href="">CONTACTS</a></li>   
+                <li><a href="" id="first" class="summa">HOME</a></li>
+                <li><a href=""   class="summa">PROJECTS</a></li>    
+                <li><a href="" id="thir" class="summa">TEAM</a></li>
+                <li><a href="" id="four" class="summa">CONTACTS</a></li>   
             </ul>
             <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\darkmode.png" id="icon">
         </nav>
         <div class="info">
-            <h1>I AM THE <span>GOD</span> <br>OF CARS</h1>
-            <p>“When Henry Ford made cheap, reliable cars people said, ‘Nah, what’s wrong with a horse? ...</p>
+            <h1 >I AM THE <span>GOD</span> <br>OF CARS</h1>
+            <p id="my-text">“When Henry Ford made cheap, reliable cars people said, ‘Nah,what’s wrong with a horse? ...</p>
         </div>
         <div class="img-box">
             <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\pattern.png" class="back-image">
@@ -76,16 +77,16 @@
         
           <div class="clearfix">
             <div class="img-container">
-            <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\blacky.jpg" alt="blachy" style="width:105%">
+            <img  src="C:\Users\harik\OneDrive\Desktop\weekend_website\blacky.jpg" alt="blachy" style="width:105%">
             </div>
-            <div class="img-container">
-            <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\blacky1.jpg" alt="blacky1" style="width:112%">
+            <div  class="img-container">
+            <img  src="C:\Users\harik\OneDrive\Desktop\weekend_website\blacky1.jpg" alt="blacky1" style="width:112%">
             </div>
             <div class="img-container">
             <img src="C:\Users\harik\OneDrive\Desktop\weekend_website\blacky3.jpg" alt="blacky3" style="width:105%">
             </div>
           </div>
-          <p>Lamborghini was founded in 1963 by Feruccio Araro Lamborghini.[4] He built tractors after the Second World War. He founded Lamborghini because he wanted to compete the rival brand of Ferrari. Standing out for his design ideas and quality.
+          <p id="my-paragraph" >Lamborghini was founded in 1963 by Feruccio Araro Lamborghini.[4] He built tractors after the Second World War. He founded Lamborghini because he wanted to compete the rival brand of Ferrari. Standing out for his design ideas and quality.
 
             In 1963, he released a first prototype of his ideal sports car, the 350 GTV. The next year, Lamborghini started with the production of their first car for sale, the 350 GT.
             
@@ -93,10 +94,10 @@
             
             Lamborghini has their offices and location in Balogne, Italy and is part of the matrix of Volksgawen Group since 1998..</p>
             
-            <div class="container1">
+            <div class="container1"id="my-my-image">
               <div class="text">
                 <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>BEAST UNLEASHED</span></h1>
-                  <p>
+                  <p id="myPara">
                       &nbsp;&nbsp;&nbsp;Tuning is an upgrade that unlocks hidden potential of your car. 
                       <br>Car tuning is the modification of a car to optimise it for a different set
                       <br>of performance requirements from those it was originally designed to meet. 
@@ -115,11 +116,11 @@
                 
                 <div class="container2">
                   <div class="image1">
-                    <img src="https://gifimage.net/wp-content/uploads/2018/04/lamborghini-gif-5.gif" width="700px">
+                    <img src="https://gifimage.net/wp-content/uploads/2018/04/lamborghini-gif-5.gif" width="700px" id="my-image"/>
                           </div>
                   <div class="text1">
                     <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Tuning and its Need</span></h1>
-                      <p>
+                      <p id="my-text">
                           &nbsp;&nbsp;&nbsp;Through proper modification,it is possible to greatly increase 
                           <br>the power output of the vehicle.while at the same time improving safety
                           <br> and longevity of the engine,drivability, and smoothness. 
@@ -137,7 +138,7 @@
      
         <div class="container3">
           <div class="image2">
-            <img src="https://gifimage.net/wp-content/uploads/2018/04/lamborghini-logo-gif-11.gif" width="700px">
+            <img id="myyImage"src="https://gifimage.net/wp-content/uploads/2018/04/lamborghini-logo-gif-11.gif" width="700px">
                   </div>
           <div class="text2 ">
            <br><h1><span>Visit Us</span></h1><br>
@@ -150,14 +151,83 @@
                 </div>
               </p>
           </div> 
-        </div> 
         </div>
+        <center><h3>
+          Thank you
+        </h3>
+      
+        <p id="iD1">
+          for visiting
+        </p>
+      
+        <button onclick=getHtml()>
+          change
+        </button>
+
+        <div id="myDIV">
+          <p class="child">See</p>
+          <p class="child">u again</p>
+        </div>
+        <button onclick="myFunctions()">Change</button></center>
+        </div>
+
 
         <script>
             var icon= document.getElementById("icon");
             icon.onclick=function(){
                 document.body.classList.toggle("dark-theme");
             }
+
+
+            function getHtml() {
+			var Element = document.getElementById("iD1");
+			alert(Element.innerHTML);
+			Element.style.color = "#ff4321";
+			Element.innerHTML = "for your encouragement";
+		}
+
+function myFunctions() {
+  const element = document.getElementById("myDIV");
+  element.getElementsByClassName("child")[1].style.fontSize = "24px";
+}
+
+ 
+
+
+  var audio = new Audio("C:/Users/harik/OneDrive/Desktop/weekend_website/Car-Revving-Large-A2-www.fesliyanstudios.com.mp3");
+  var image = document.getElementById("my-my-image");
+  image.addEventListener("mouseover", function() {
+    audio.play();
+  });
+  image.addEventListener("mouseout", function() {
+    audio.pause();
+    audio.currentTime = 0;
+  });
+
+  var image = document.getElementById("my-image");
+  image.addEventListener("mouseover", function() {
+    image.setAttribute("src", "https://media1.giphy.com/media/kQzL9v0yvrOnBmlaMO/giphy.webp?cid=ecf05e47whe362fd67omryt0hbh37iashknj5gcr827zt0ui&rid=giphy.webp&ct=g");
+    image.setAttribute("alt", "Image 2");
+  });
+  
+  image.addEventListener("mouseout", function() {
+    image.setAttribute("src", "https://gifimage.net/wp-content/uploads/2018/04/lamborghini-gif-5.gif");
+    image.setAttribute("alt", "Image 1");
+  });
+
+  var text = document.getElementById("my-text");
+  var isUppercase = false;
+  
+  text.addEventListener("click", function() {
+    if (isUppercase) {
+      text.textContent = text.textContent.toLowerCase();
+      isUppercase = false;
+    } else {
+      text.textContent = text.textContent.toUpperCase();
+      isUppercase = true;
+    }
+  });
+
         </script>
     </body>
 </html>

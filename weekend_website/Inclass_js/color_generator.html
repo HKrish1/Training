@@ -1,0 +1,24 @@
+<div style="text-align: center;">
+    <div id="my-color" style="background-color: #000000; width: 100px; height: 100px;"></div>
+    <button id="generate-color">Generate Color</button>
+  </div>
+  
+  <script>
+    var colorDiv = document.getElementById("my-color");
+    var generateBtn = document.getElementById("generate-color");
+    
+    function generateHexColor() {
+      var hexColor = "#";
+      var hexChars = "0123456789ABCDEF";
+      for (var i = 0; i < 6; i++) {
+        hexColor += hexChars[Math.floor(Math.random() * 16)];
+      }
+      return hexColor;
+    }
+    
+    generateBtn.addEventListener("click", function() {
+      var randomColor = generateHexColor();
+      colorDiv.style.backgroundColor = randomColor;
+    });
+  </script>
+  
