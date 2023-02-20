@@ -6,7 +6,7 @@ import car_logo from 'C:/Users/harik/OneDrive/Desktop/react_folder/reactfirst/sr
 function App2(){
     return(
         <div>
-            <center> <img src={car} alt="this is car image" width={500} title={'Ferrari'}/><br></br>
+             <center><img src={car} alt="this is car image" width={500} title={'Ferrari'}/><br></br>
              </center>
         </div>
 
