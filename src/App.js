@@ -33,7 +33,7 @@ function App() {
  <h3><Parallelogram1 /></h3>
  <h1>Area of Cube</h1>
  <h3><Cube1 /></h3></div>
- </div><br></br><h1>Ferrari Superior</h1></center>
+ </div><br></br><h1>Ferrari Superior Toy</h1></center>
   );
 }
 

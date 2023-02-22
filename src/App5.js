@@ -7,7 +7,7 @@ function App5(){
     return(
         <div>
             <center>
-             <b>Description:</b><i>Only 100 units have been produces</i><br></br></center>
+             <b>Description:</b><i>Only 100 units have been produced(limited stock)</i><br></br></center>
         </div>
 
     )

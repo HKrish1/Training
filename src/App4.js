@@ -7,7 +7,7 @@ function App4(){
     return(
         <div>
             <center>
-             <b>Price:</b><i>$10000000</i><br></br>
+             <b>Price:</b><i>$500</i><br></br>
              </center>
         </div>
 

@@ -1,10 +1,40 @@
-import logo from './logo.svg';
-import background from 'C:/Users/harik/OneDrive/Desktop/react_folder/reactfirst/src/background.jpg';
+import React, { useState, useEffect } from 'react';
 
-function App6() {
+const Product = ({ name }) => {
+  const [quantity, setQuantity] = useState(0);
+  const [price, setPrice] = useState(0);
+
+  useEffect(() => {
+    if (quantity === 1) {
+      setPrice(500);
+    }
+    if (quantity ===0) {
+      setPrice(0);
+    }
+    else if (quantity => 1) {
+      setPrice(500 * quantity);
+    }
+  }, [quantity]);
+
+  const handleBuy = () => {
+    setQuantity(quantity + 1);
+  }
+
+  const handleCancel = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
+  }
+
   return (
-   <center><button id="but">BUY NOW</button></center>    
+    <center><div>
+      <h2>{name}</h2>
+      <button id="but" onClick={handleBuy}>Buy</button>
+      <button id="but" onClick={handleCancel}>Cancel</button>
+      <p class="large">Price: ${price}</p>
+      <p class="large">Quantity: {quantity}</p>
+    </div></center>
   );
 }
 
-export default App6;
+export default Product;
