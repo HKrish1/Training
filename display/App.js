@@ -1,5 +1,6 @@
 import React from 'react';
 class App extends React.Component{
+
     constructor(props)
     {
         super(props);
@@ -29,9 +30,13 @@ class App extends React.Component{
     <button onClick={this.changeB}>Change B</button>
     <button onClick={this.changeC}>Change C</button>
     <button onClick={this.changeD}>Change D</button>
+    <div>
+              {
+                  this.state.show? <div><h1>A={this.state.a} B={this.state.b} C={this.state.c} D={this.state.d}</h1></div> : null
+              }
+              <button onClick={()=>{this.setState({show:!this.state.show})}}>{ this.state.show? 'Hide' : 'Show'} Div</button>
+    </div>
     <h1>The Ans is {this.state.a*this.state.b*this.state.c*this.state.d}</h1>
-    <button><h1> A={this.state.a} b={this.state.b} c={this.state.c} d={this.state.d}</h1></button>
-
     </>
     );
 }
